@@ -1,0 +1,46 @@
+.controls{
+  margin-inline-start: 2rem;
+  text-align: center;
+}
+
+.sliders{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.App{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-block-end: 4rem;
+}
+
+
+.Gradient{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas{
+  display: grid;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.maker{
+  grid-column: 1;
+  color: black;
+  margin-inline-start: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .App{
+    grid-template-columns: 1fr;
+  }
+}
+  
