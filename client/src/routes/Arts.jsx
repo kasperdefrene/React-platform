@@ -1,5 +1,5 @@
-import { Form, useLoaderData } from "react-router-dom";
-import { getArts, createArt } from "../js/arts";
+import { useLoaderData } from "react-router-dom";
+import { getArts } from "../js/arts";
 
 export const loader = async () => {
     console.log("Root loader");
@@ -7,16 +7,15 @@ export const loader = async () => {
     return result;
 };
 
+
 export default function Arts() {
 
-    const artworks = useLoaderData();
+    const arts = useLoaderData();
     return( 
     <div>
         <h1>This is the gallery</h1>
-        {artworks?.map((artwork) => (
-            <div>
-                <h2>{artwork.title}</h2>
-            </div>
+        {arts?.map((artworks) => (
+            <p>{artworks.title}</p>
         ))}
 
     </div>

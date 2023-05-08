@@ -16,7 +16,7 @@ export const getArts = async () => {
     return data.entries;
 };
 
-export const createArt = async (updates) => {
+export async function createArt(updates, artwork){
     const { data } = await graphQLRequest(`
     mutation MyMutation($title: String, $artwork: String) {
         save_artworks_default_Entry(

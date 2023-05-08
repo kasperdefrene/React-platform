@@ -1,6 +1,6 @@
-import { deleteContact } from "../js/arts";
+import { deleteArt } from "../js/arts";
 
 export async function action({ params }) {
-  await deleteContact(params.contactId);
+  await deleteArt(params.authorId);
   return redirect("/");
 }
