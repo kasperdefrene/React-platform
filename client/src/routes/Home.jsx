@@ -24,6 +24,8 @@ export const action = async ({ request }) => {
 
 export default function Home() {
   const arts = useLoaderData();
+  console.log(arts);
+
     const [radius, setRadius] = useState(125);
   const handleSetRadius = (e) => {
     setRadius(e);
@@ -135,16 +137,16 @@ export default function Home() {
         <input type="submit" value="submit" />
       </Form>
       
-    <div>
-        <h1>This is the gallery</h1>
-        {arts?.map((artworks) => (
-            <div>
-              <p>{artworks.title}</p>
-              <p>{artworks.artwork}</p>
-            </div>
-        ))}
+        <div>
+            <h1>This is the gallery</h1>
+            {arts?.map((artworks) => (
+                <div key= {artworks.id}>
+                  <p>{artworks.title}</p>
+                  <p>{artworks.artwork}</p>
+                </div>
+            ))}
 
-    </div>
+        </div>
 
 
           <button className='save__btn'>Save</button>
