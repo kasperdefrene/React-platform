@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: artworks
-name: Artworks
+name: artworks
 previewTargets:
   -
     __assoc__:

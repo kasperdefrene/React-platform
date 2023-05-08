@@ -1,4 +1,4 @@
-dateModified: 1683448871
+dateModified: 1683535877
 email:
   fromEmail: kasper.de.frene@student.howest.be
   fromName: Reactplatform
@@ -9,8 +9,9 @@ meta:
     97c87b0b-f2c3-412e-a3f3-949ec76173e3: 'Public Schema' # Public Schema
     a43d82f2-6067-4340-9cbb-4473f8922647: Default # Default
     af8d1abc-cf7c-4541-8cc7-77b134f7f7fb: Reactplatform # Reactplatform
+    b7746497-71f5-4e12-82ee-d78fa0538d29: artwork # artwork
     d08d1aef-0b44-4e58-9066-38b5ed31616e: Common # Common
-    ee44e79b-c852-4e59-8137-e9b1ff81aae0: Artworks # Artworks
+    ee44e79b-c852-4e59-8137-e9b1ff81aae0: artworks # artworks
 plugins:
   graphql-authentication:
     edition: standard

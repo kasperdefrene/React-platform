@@ -1,0 +1,19 @@
+columnSuffix: ghwcdjpe
+contentColumnType: text
+fieldGroup: d08d1aef-0b44-4e58-9066-38b5ed31616e # Common
+handle: artwork
+instructions: null
+name: artwork
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

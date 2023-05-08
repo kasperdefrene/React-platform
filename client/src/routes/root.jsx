@@ -1,24 +1,24 @@
+import { Form, useLoaderData } from "react-router-dom";
+import {getArts} from "../js/arts"
+
+export const loader = async () => {
+    const result = await getArts();
+    return result;
+}
+
+export const action = () => ({})
+
 export default function Root() {
+    const artworks = useLoaderData();
     return (
-      <>
-        <div id="sidebar">
-          <h1 id="titel__homepage">React Router Artworks</h1>
-          <div>
-            <form method="post">
-              <button type="submit">New</button>
-            </form>
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <a href={`/contacts/1`}>Artwork 1</a>
-              </li>
-              <li>
-                <a href={`/contacts/2`}>Artwork 2</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </>
+      <div>
+        <h1>Artwork collection</h1>
+        {artworks?.map((artwork) => (
+            <div>
+                <h2>{artwork.title}</h2>
+            </div> 
+        )
+        )}
+      </div>
     );
   }
