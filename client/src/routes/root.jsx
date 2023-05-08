@@ -2,7 +2,7 @@ export default function Root() {
     return (
       <>
         <div id="sidebar">
-          <h1>React Router Artworks</h1>
+          <h1 id="titel__homepage">React Router Artworks</h1>
           <div>
             <form method="post">
               <button type="submit">New</button>
@@ -19,7 +19,6 @@ export default function Root() {
             </ul>
           </nav>
         </div>
-        <div id="detail"></div>
       </>
     );
   }
