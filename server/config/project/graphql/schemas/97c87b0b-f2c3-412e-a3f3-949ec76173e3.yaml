@@ -1,0 +1,11 @@
+isPublic: true
+name: 'Public Schema'
+scope:
+  - 'sites.20a21241-e6c8-4d17-9bd1-f5954f212fde:read' # Reactplatform
+  - 'sections.ee44e79b-c852-4e59-8137-e9b1ff81aae0:read' # artworks
+  - 'entrytypes.a43d82f2-6067-4340-9cbb-4473f8922647:read' # Default
+  - 'sections.ee44e79b-c852-4e59-8137-e9b1ff81aae0:edit' # artworks
+  - 'entrytypes.a43d82f2-6067-4340-9cbb-4473f8922647:edit' # Default
+  - 'entrytypes.a43d82f2-6067-4340-9cbb-4473f8922647:create' # Default
+  - 'entrytypes.a43d82f2-6067-4340-9cbb-4473f8922647:save' # Default
+  - 'entrytypes.a43d82f2-6067-4340-9cbb-4473f8922647:delete' # Default

@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: artworks
+name: artworks
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  20a21241-e6c8-4d17-9bd1-f5954f212fde: # Reactplatform
+    enabledByDefault: true
+    hasUrls: true
+    template: artworks/_entry
+    uriFormat: 'artworks/{slug}'
+type: channel
