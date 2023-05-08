@@ -131,14 +131,17 @@ export default function Home() {
           </div>  
           <Form method="post">
         <input type="text" name="title" />
-       
+        <input type="text" name="artwork" />
         <input type="submit" value="submit" />
       </Form>
       
     <div>
         <h1>This is the gallery</h1>
         {arts?.map((artworks) => (
-            <p>{artworks.title}</p>
+            <div>
+              <p>{artworks.title}</p>
+              <p>{artworks.artwork}</p>
+            </div>
         ))}
 
     </div>
