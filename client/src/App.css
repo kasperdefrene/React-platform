@@ -6,7 +6,7 @@
 .sliders{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2.1rem;
+  gap: 2rem;
 }
 
 .App{
