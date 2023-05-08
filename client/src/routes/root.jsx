@@ -1,6 +1,6 @@
 import { Form, useLoaderData } from "react-router-dom";
 import {getArts} from "../js/arts"
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, } from "react-router-dom";
 import React from 'react'
 
 export const loader = async () => {

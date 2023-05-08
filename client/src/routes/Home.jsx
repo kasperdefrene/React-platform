@@ -4,8 +4,26 @@ import Slider from '../components/Slider';
 import ColorPicker from '../components/ColorPicker';
 import Creator from '../components/Creator';
 import { useState } from 'react';
+import { createArt, getArts } from '../js/arts';
+import { Form, useLoaderData, Link } from "react-router-dom";
+
+export const loader = async () => {
+  console.log("Root loader");
+  const result = await getArts();
+  return result;
+};
+
+export const action = async ({ request }) => {
+  console.log("Root action");
+  const formData = await request.formData();
+  const updates = Object.fromEntries(formData);
+  const artwork = await createArt(updates);
+  console.log(updates);
+  return artwork;
+};
 
 export default function Home() {
+  const arts = useLoaderData();
     const [radius, setRadius] = useState(125);
   const handleSetRadius = (e) => {
     setRadius(e);
@@ -111,6 +129,20 @@ export default function Home() {
               <Artwork radius={radius} colorOne={colorOne} colorTwo={colorTwo} rotation={rotationResult} offsetOne={offsetOnePercentage} offsetTwo={offsteTwoPercentage} seaLevel={seaLevel} colorBoat={colorBoat} boatLocation={boatLocation} boatY={boatY}/>
               <h3 className='maker'>Created by {inputText}</h3>
           </div>  
+          <Form method="post">
+        <input type="text" name="title" />
+       
+        <input type="submit" value="submit" />
+      </Form>
+      
+    <div>
+        <h1>This is the gallery</h1>
+        {arts?.map((artworks) => (
+            <p>{artworks.title}</p>
+        ))}
+
+    </div>
+
 
           <button className='save__btn'>Save</button>
         </div>
