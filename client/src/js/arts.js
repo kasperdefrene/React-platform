@@ -18,7 +18,18 @@ export const getArts = async () => {
 
 export const CreateArt = async (updates) => {
     const { data } = await graphQLRequest(`
-    
+    mutation MyMutation($title: String, $artwork: String) {
+        save_artworks_default_Entry(
+          authorId: "1"
+          slug: "-"
+          title: $title
+          artwork: $artwork
+        ){
+          title
+          artwork
+          id
+        }
+      }
     `,
     updates
     );

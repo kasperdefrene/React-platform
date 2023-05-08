@@ -5,7 +5,19 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-image: radial-gradient(
+      circle at 84% -20%,
+      #e26247 23%,
+      rgba(255, 255, 255, 0) 77%
+    ),
+    linear-gradient(163deg, #473bc2 71%, rgba(255, 255, 255, 0) 84%),
+    linear-gradient(130deg, #3d561b 54%, rgba(255, 255, 255, 0) 98%),
+    radial-gradient(
+      ellipse at 120% -120%,
+      #31eaf1 37%,
+      rgba(255, 255, 255, 0) 65%
+    ),
+    linear-gradient(253deg, #57caba 19%, rgba(255, 255, 255, 0) 37%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,25 +27,24 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
+  font-weight: 800;
+  color: #ffffff;
   text-decoration: inherit;
 }
 a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+#logo{
+  width: 2%;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+body {
+  margin: 0;
+  display: grid;
+  min-width: 320px;
+  min-height: 100vh;
+  text-align: center;
 }
 
 button {
@@ -43,7 +54,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #151515;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -53,6 +64,17 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+nav{
+  background-color: #151515a7;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #ffffff;
 }
 
 
