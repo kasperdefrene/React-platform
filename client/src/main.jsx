@@ -7,7 +7,7 @@ import {
 import './index.css'
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
-import Home, {loader as homeLoader, action as homeAction,} from "./routes/Home.jsx";
+import Home from "./routes/Home.jsx";
 import Arts from "./routes/Arts.jsx";
 
 const router = createBrowserRouter([
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
     children: [
-      { path: "/", element: <Home />, loader: homeLoader, action: homeAction,  },
+      { path: "/", element: <Home />  },
       { path: "arts", element: <Arts /> }
     ],
     errorElement: <ErrorPage />,
